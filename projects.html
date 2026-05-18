@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by William Blanco — cybersecurity and software development work.">
     <title>Projects Page</title>
 </head>
+
 <body>
-    
+    <header class="site-header">
+        <nav aria-label="Primary navigation">
+            <ul class="site-nav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" class="site-main">
+
+    <span class="eyebrow">// projects</span>
+    <h1>What I've<br><em>Built</em></h1>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="resume-section-title">Featured Projects</h2>
+
+      <ul class="projects-grid" role="list">
+
+        <li>
+          <article class="project-card">
+            <span class="project-type">Security / Python</span>
+            <h3>Home Lab SIEM with AI-assisted Incident Response</h3>
+            <p>Built an isolated VirtualBox lab and deployed Splunk Enterprise to detect SSH brute-force and port scan attacks in real time. Integrated Splunk's REST API with an AI API to auto-generate structured incident reports.</p>
+            <ul class="project-stack" aria-label="Technologies">
+              <li>Python</li>
+              <li>Splunk</li>
+              <li>Nmap</li>
+              <li>Metasploit</li>
+              <li>VirtualBox</li>
+            </ul>
+          </article>
+        </li>
+
+        <li>
+          <article class="project-card">
+            <span class="project-type">iOS / Swift</span>
+            <h3>SpeciesID — iOS Species Identification App</h3>
+            <p>Authentication and UI lead on a 4-person team. Implemented Firebase Authentication with Google Sign-In and email/password flows, and built login UI in SwiftUI connected to a CoreML classification pipeline.</p>
+            <ul class="project-stack" aria-label="Technologies">
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>Firebase</li>
+              <li>CoreML</li>
+            </ul>
+          </article>
+        </li>
+
+        <li>
+          <article class="project-card">
+            <span class="project-type">Java / TDD</span>
+            <h3>BankAccount — Java TDD Portfolio Project</h3>
+            <p>Clean-architecture Java application built test-first using JUnit 5 and Mockito. Applied SOLID principles, parameterized tests, and dependency mocking to ensure full coverage of banking logic.</p>
+            <ul class="project-stack" aria-label="Technologies">
+              <li>Java</li>
+              <li>JUnit 5</li>
+              <li>Mockito</li>
+              <li>Gradle</li>
+            </ul>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+    <section class="widget-section" aria-labelledby="github-heading">
+      <span class="eyebrow">// github activity</span>
+      <h2 id="github-heading" class="resume-section-title">GitHub Repositories</h2>
+      <p>Live data pulled from the GitHub API.</p>
+
+      <div id="github-status" aria-live="polite" aria-atomic="true"></div>
+      <ul id="github-repos" class="projects-grid" role="list"></ul>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 William Blanco · San Diego, CA</p>
+    <p>USMC Veteran · B.A. Computer Science · USD</p>
+  </footer>
+
+  <script src="js/github.js"></script>
+
 </body>
 </html>
