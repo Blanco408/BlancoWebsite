@@ -67,25 +67,72 @@
                             </span>
                         </a>
                     </li>
-                    <a href="https://github.com/Blanco408" target="_blank" rel="noopener noreferrer"
-                        class="contact-link">
-                        <span class="cl-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                            </svg>
-                        </span>
-                        <span>
-                            <span class="cl-label">GitHub</span>
-                            <span class="cl-value">github.com/yourusername</span>
-                        </span>
-                    </a>
+                    <li>
+                        <a href="https://github.com/Blanco408" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
+                            <span class="cl-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </span>
+                            <span>
+                                <span class="cl-label">GitHub</span>
+                                <span class="cl-value">github.com/Blanco408</span>
+                            </span>
+                        </a>
                     </li>
 
                 </ul>
             </section>
+            <section aria-labelledby="form-heading">
+                <h2 id="form-heading">Send a Message</h2>
+
+                <form id="contact-form" class="contact-form" action="mailto:wblanco@sandiego.edu" method="POST"
+                    enctype="text/plain">
+
+                    <div class="form-field">
+                        <label for="fc-name">Name</label>
+                        <input type="text" id="fc-name" name="name" placeholder="Jane Smith" autocomplete="name"
+                            required minlength="2">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fc-email">Email</label>
+                        <input type="email" id="fc-email" name="email" placeholder="jane@example.com"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fc-subject">Subject</label>
+                        <input type="text" id="fc-subject" name="subject"
+                            placeholder="Job opportunity, collaboration, etc.">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fc-message">Message</label>
+                        <textarea id="fc-message" name="message" placeholder="What's on your mind?" required
+                            minlength="10"></textarea>
+                    </div>
+
+                    <button type="submit">Send message</button>
+
+                    <p id="form-status" aria-live="polite" aria-atomic="true" style="display:none"></p>
+
+                </form>
+            </section>
+
+        </div>
+
     </main>
+    <footer class="site-footer">
+        <p>© 2026 William Blanco · San Diego, CA</p>
+        <p>USMC Veteran · B.A. Computer Science · USD</p>
+    </footer>
+
 </body>
+
+</html>
 
 </html>
