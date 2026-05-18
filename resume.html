@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="site-header">
-    <nav aria-label="Primary navigation">
-      <ul class="site-nav">
-        <li><a href="index.html">About</a></li>
-        <li><a href="resume.html" aria-current="page">Résumé</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-</header>
- <main id="main-content" class="site-main">
- 
-    <span class="eyebrow">// résumé</span>
-    <h1>Experience &amp;<br ><em>Background</em></h1>
-    <!-- Download icon drawn with SVG path, polyline, and line elements from claude -->
-    <a href="assets/Blanco_Cubic_Resume.pdf" class="resume-download" download>
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-        <polyline points="7 10 12 15 17 10"/>
-        <line x1="12" y1="15" x2="12" y2="3"/>
-      </svg>
-      Download PDF
-    </a>
-</main>
+        <nav aria-label="Primary navigation">
+            <ul class="site-nav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html" aria-current="page">Résumé</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" class="site-main">
+
+        <span class="eyebrow">// résumé</span>
+        <h1>Experience &amp;<br><em>Background</em></h1>
+        <!-- Download icon drawn with SVG path, polyline, and line elements from claude -->
+        <a href="assets/Blanco_Cubic_Resume.pdf" class="resume-download" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF
+        </a>
+        <!-- ── SUMMARY ── -->
+        <section class="resume-section" aria-labelledby="summary-heading">
+            <h1 id="summary-heading" class="resume-section-title">Summary</h1>
+            <p>
+                Computer Science student at the University of San Diego with a concentration in Cybersecurity
+                and hands-on experience in Java, Python, Swift, and C++ development, software integration, and
+                full-cycle design and validation. Built and deployed a home lab SIEM environment with automated
+                threat detection and AI-assisted incident reporting. Currently completing a B.A. in Computer
+                Science while enrolled in USD's combined Master's program in Cybersecurity Engineering. U.S.
+                Marine Corps veteran with a proven record of disciplined execution, cross-functional teamwork,
+                and performing effectively in mission-critical environments. Eligible to obtain a security clearance.
+            </p>
+        </section>
+
+        <!-- ── EDUCATION ── -->
+        <section class="resume-section" aria-labelledby="edu-heading">
+            <h2 id="edu-heading" class="resume-section-title">Education</h2>
+
+            <ol class="timeline" reversed>
+
+                <li class="timeline-entry">
+                    <article>
+                        <span class="entry-org">University of San Diego — San Diego, CA</span>
+                        <h3>M.S. in Cybersecurity Engineering (Combined)</h3>
+                        <ul class="entry-bullets">
+                            <li>Enrolled in combined B.A./M.S. program</li>
+                        </ul>
+                    </article>
+                    <time class="entry-date" datetime="2027-05">Expected May 2027</time>
+                </li>
+
+                <li class="timeline-entry">
+                    <article>
+                        <span class="entry-org">University of San Diego — San Diego, CA</span>
+                        <h3>B.A. in Computer Science — Cybersecurity Concentration</h3>
+                    </article>
+                    <time class="entry-date" datetime="2026-08">Expected August 2026</time>
+                </li>
+
+            </ol>
+        </section>
+    </main>
 </body>
+
 </html>
